@@ -208,7 +208,7 @@ tbody tr:hover td{background:#fbfaf6}
 <div class="slide-no" id="sno"></div>
 <div class="hint">ใช้ปุ่ม ← → หรือคลิกเพื่อเลื่อนสไลด์</div>
 <script>
-const SALES={"ร้อยเอ็ด": {"target": 1419000, "actual": 1254405, "staff": [{"name": "ทิว", "g": {"sh": [350000, 310621], "lz": [200000, 169344]}, "total": 479965, "prev": 520359, "gprev": {"sh": 337480, "lz": 182879}}, {"name": "ปุ๊กปิ๊ก", "g": {"sh": [50000, 17819], "lz": [50000, 23113], "fb": [200000, 265409]}, "total": 306341, "prev": 416682, "gprev": {"sh": 21451, "lz": 22791, "fb": 372440}}, {"name": "ขวัญ", "g": {"sh": [90000, 122818], "fb": [60000, 24690]}, "total": 147508, "prev": 138662, "gprev": {"sh": 90902, "fb": 47760}}, {"name": "แนน", "g": {"sh": [99000, 55771]}, "total": 55771, "prev": 95365, "gprev": {"sh": 95365}}, {"name": "โอ", "g": {"sh": [50000, 18030], "fb": [70000, 49990]}, "total": 68020, "prev": 76459, "gprev": {"sh": 29352, "fb": 47107}}, {"name": "อั้ม", "g": {"fb": [200000, 132903]}, "total": 132903, "prev": 243067, "gprev": {"fb": 243067}}], "prev": 1554761.27}, "มหาสารคาม": {"target": 300000, "actual": 138170, "staff": [{"name": "ปาย", "g": {"sh": [250000, 111426], "lz": [50000, 9574]}, "total": 121000, "prev": 164680, "gprev": {"sh": 149736, "lz": 14944}}], "prev": 173380.81}, "อุบล": {"target": 350000, "actual": 196829, "staff": [{"name": "เฟิน", "g": {"sh": [210000, 99577], "fb": [20000, 10830]}, "total": 110407, "prev": 158961, "gprev": {"sh": 143181, "fb": 15780}}, {"name": "วิว", "g": {"sh": [120000, 86422]}, "total": 86422, "prev": 99207, "gprev": {"sh": 97127}}], "prev": 258168}, "ขอนแก่น": {"target": 300000, "actual": 250282, "staff": [{"name": "วาส", "g": {"sh": [100000, 83353], "fb": [150000, 114450]}, "total": 197803, "prev": 167027, "gprev": {"sh": 83751, "fb": 83276}}, {"name": "นุ่น", "g": {"sh": [50000, 33717], "fb": [50000, 7260]}, "total": 40977, "prev": 61659, "gprev": {"sh": 38609, "fb": 23050}}], "prev": 254216}, "กาฬสินธุ์": {"target": 1070000, "actual": 966088, "staff": [{"name": "มีมี่", "g": {"sh": [200000, 196935], "lz": [200000, 133557]}, "total": 330492, "prev": 336557, "gprev": {"sh": 177947, "lz": 158610}}, {"name": "พริ้ม", "g": {"sh": [210000, 266537], "lz": [70000, 44639], "fb": [null, 15160]}, "note": "Facebook ไม่ได้ตั้งเป้า", "total": 326336, "prev": 265953, "gprev": {"sh": 203236, "lz": 62717, "fb": null}}, {"name": "นุ๊กเกอร์", "g": {"sh": [100000, 105676], "lz": [20000, 72857], "fb": [100000, 27510]}, "total": 206043, "prev": 200004, "gprev": {"sh": 93421, "lz": 15771, "fb": 90812}}, {"name": "อามมี่", "g": {"sh": [50000, 29532], "lz": [80000, 22475], "fb": [40000, 50370]}, "total": 102377, "prev": 152488, "gprev": {"sh": 47703, "lz": 73185, "fb": 31600}}], "prev": 956003.83}}, ADS={"sh": {"limit": 20, "rows": [{"branch": "ร้อยเอ็ด", "name": "ปุ๊กปิ๊ก", "sales": 17819, "ads": 5136, "pc": 28.823166283180875}]}, "lz": {"limit": 20, "rows": [{"branch": "กาฬสินธุ์", "name": "อามมี่", "sales": 22475, "ads": 8881, "pc": 39.51501668520579}]}, "fb": {"limit": 35, "rows": [{"branch": "ร้อยเอ็ด", "name": "ขวัญ", "sales": 24690, "ads": 16722, "pc": 67.72782503037668}]}}, REC={"benefits": ["ได้ป้ายร้านแนะนำ เพิ่มความน่าเชื่อถือจากลูกค้า", "ค้นหาเจอง่ายขึ้น", "มีสิทธิเข้าร่วมแคมเปญ", "ฟรี Chat Broadcast"], "updated": "อัปเดตล่าสุด 31 ส.ค. 69", "criteria": [["ยอดขายต่อเดือน", ">= 100 คำสั่งซื้อ หรือ >= 30,000 บาท"], ["จำนวนผู้ซื้อที่ไม่ซ้ำกันต่อเดือน", ">= 15 คน"], ["คะแนนร้านค้า", ">= 4.5 คะแนน"], ["อัตราคำสั่งซื้อที่ไม่สำเร็จ", "<= 10%"], ["อัตราการจัดส่งสินค้าล่าช้า", "<= 10%"], ["อัตราการตอบกลับแชท", ">= 70%"], ["เปอร์เซ็นต์สินค้าพร้อมออเดอร์ (ไม่เกินจำนวนวันที่ละเมิดเกณฑ์ภายใน 30 วันที่ผ่านมา)", "<= 10%"], ["จำนวนวันที่ละเมิดเกณฑ์สินค้าพร้อมออเดอร์", "<= 5 วัน"], ["คะแนนความประพฤติ", "= 0 คะแนน"], ["อัตราการจัดส่งเร็ว", ">= 85%"]], "express_title": "[มีผล 15 ก.ย. 69 เป็นต้นไป] เกณฑ์ส่งด่วน (Express Delivery)", "express": [["จำนวนวันที่ร้านค้าเปิดใช้งานส่งด่วน*", "7 วัน/สัปดาห์*"], ["จำนวนวันที่เปิดใช้งานส่งด่วนกับสินค้าอย่างน้อย 90%**", "7 วัน/สัปดาห์*"]], "express_notes": ["*คำสั่งซื้อที่ชำระเงินสำเร็จภายใน 12.00 น. ร้านค้าต้องจัดส่งมอบพัสดุให้ขนส่งภายในวันเดียวกัน โดยไม่นับอาทิตย์และวันหยุดนักขัตฤกษ์ ตามนโยบาย DTS0", "**คำนวณจากสินค้าที่สามารถเปิดใช้งานส่งด่วนได้"]}, OCT=[{"branch": "ร้อยเอ็ด", "target": 1555000, "actual": 346430}, {"branch": "มหาสารคาม", "target": 250000, "actual": 44327}, {"branch": "อุบล", "target": 300000, "actual": 118495}, {"branch": "ขอนแก่น", "target": 250000, "actual": 63765}, {"branch": "กาฬสินธุ์", "target": 1000000, "actual": 258309}];
+const SALES={"ร้อยเอ็ด": {"target": 1419000, "actual": 1254405, "staff": [{"name": "ทิว", "g": {"sh": [350000, 310621], "lz": [200000, 169344]}, "total": 479965, "prev": 520359, "gprev": {"sh": 337480, "lz": 182879}}, {"name": "ปุ๊กปิ๊ก", "g": {"sh": [50000, 17819], "lz": [50000, 23113], "fb": [200000, 265409]}, "total": 306341, "prev": 416682, "gprev": {"sh": 21451, "lz": 22791, "fb": 372440}}, {"name": "ขวัญ", "g": {"sh": [90000, 122818], "fb": [60000, 24690]}, "total": 147508, "prev": 138662, "gprev": {"sh": 90902, "fb": 47760}}, {"name": "แนน", "g": {"sh": [99000, 55771]}, "total": 55771, "prev": 95365, "gprev": {"sh": 95365}}, {"name": "โอ", "g": {"sh": [50000, 18030], "fb": [70000, 49990]}, "total": 68020, "prev": 76459, "gprev": {"sh": 29352, "fb": 47107}}, {"name": "อั้ม", "g": {"fb": [200000, 132903]}, "total": 132903, "prev": 243067, "gprev": {"fb": 243067}}], "prev": 1554761.27}, "มหาสารคาม": {"target": 300000, "actual": 138170, "staff": [{"name": "ปาย", "g": {"sh": [250000, 111426], "lz": [50000, 9574], "fb": [null, 17170]}, "total": 138170, "prev": 164680, "gprev": {"sh": 149736, "lz": 14944, "fb": null}}], "prev": 173380.81}, "อุบล": {"target": 350000, "actual": 196829, "staff": [{"name": "เฟิน", "g": {"sh": [210000, 99577], "fb": [20000, 10830]}, "total": 110407, "prev": 158961, "gprev": {"sh": 143181, "fb": 15780}}, {"name": "วิว", "g": {"sh": [120000, 86422]}, "total": 86422, "prev": 99207, "gprev": {"sh": 97127}}], "prev": 258168}, "ขอนแก่น": {"target": 300000, "actual": 250282, "staff": [{"name": "วาส", "g": {"sh": [100000, 83353], "fb": [150000, 114450]}, "total": 197803, "prev": 167027, "gprev": {"sh": 83751, "fb": 83276}}, {"name": "นุ่น", "g": {"sh": [50000, 33717], "fb": [50000, 7260]}, "total": 40977, "prev": 61659, "gprev": {"sh": 38609, "fb": 23050}}], "prev": 254216}, "กาฬสินธุ์": {"target": 1070000, "actual": 966088, "staff": [{"name": "มีมี่", "g": {"sh": [200000, 196935], "lz": [200000, 133557]}, "total": 330492, "prev": 336557, "gprev": {"sh": 177947, "lz": 158610}}, {"name": "พริ้ม", "g": {"sh": [210000, 266537], "lz": [70000, 44639], "fb": [null, 15160]}, "note": "Facebook ไม่ได้ตั้งเป้า", "total": 326336, "prev": 265953, "gprev": {"sh": 203236, "lz": 62717, "fb": null}}, {"name": "นุ๊กเกอร์", "g": {"sh": [100000, 105676], "lz": [20000, 72857], "fb": [100000, 27510]}, "total": 206043, "prev": 200004, "gprev": {"sh": 93421, "lz": 15771, "fb": 90812}}, {"name": "อามมี่", "g": {"sh": [50000, 29532], "lz": [80000, 22475], "fb": [40000, 50370]}, "total": 102377, "prev": 152488, "gprev": {"sh": 47703, "lz": 73185, "fb": 31600}}], "prev": 956003.83}}, SUMMARY={"กาฬสินธุ์": {"rows": [["นุ๊กเกอร์", [15488.25, 105676, 14.66, 31858, 30.15], [7918, 72857, 10.87, 17149.47, 23.54], [9130.71, 27510, 33.19]], ["พริ้ม", [30495, 266537, 11.44, 91230, 34.23], [8667, 44639, 19.42, 13980.51, 31.32], [null, 15160, 0.0]], ["มีมี่", [30602, 196935, 15.54, 58787, 29.85], [24396, 133557.92, 18.27, 47757.45, 35.76], [null, 840, 0.0]], ["อามมี่", [6099, 29532, 20.65, 9060, 30.68], [8881, 22475, 39.52, 611.87, 2.72], [7557.48, 50370, 15.0]]], "total": [[82684.25, 598680, 13.81, 190935, 31.89], [49862, 273528.92, 18.23, 79499.3, 29.06], [16688.19, 93880, 17.78]]}, "ขอนแก่น": {"rows": [["นุ่น", [4280, 33717, 12.69, 9448, 28.02], [null, 6311.5, 0.0, 1812.38, 28.72], [7505.75, 7260, 103.38]], ["วาส", [12305, 83353, 14.76, 22104, 26.52], [null, 2987.7, 0.0, 210.46, 7.04], [31472.11, 114450, 27.5]], ["เกด", [3210, 1033, 310.75, 2367, 229.14], [null, null, null, null, null], [2763, 1170, 236.15]]], "total": [[19795, 118103, 16.76, 33919, 28.72], [null, 9299.2, 0.0, 2022.84, 21.75], [41740.86, 122880, 33.97]]}, "ร้อยเอ็ด": {"rows": [["ขวัญ", [21935, 146488, 14.97, 34570, 23.6], [null, null, null, null, null], [16722.82, 24690, 67.73]], ["ทิว", [68908, 326912, 21.08, 106973, 32.72], [20865, 174750, 11.94, 61699.07, 35.31], [null, 8380, 0.0]], ["ปุ๊กปิ๊ก", [5136, 17819, 28.82, 6100, 34.23], [3424, 23113, 14.81, 7209.8, 31.19], [39096.22, 274489, 14.24]], ["อั้ม", [null, null, null, null, null], [null, null, null, null, null], [28745.05, 132903, 21.63]], ["แนน", [12305, 55771, 22.06, 19165, 34.36], [null, null, null, null, null], [null, 1070, 0.0]], ["โอ", [3745, 18030, 20.77, 6225, 34.53], [null, null, null, null, null], [12018.91, 49900, 24.09]]], "total": [[112029, 565020, 19.83, 173033, 30.62], [24289, 197863, 12.28, 68908.87, 34.83], [96583, 491432, 19.65]]}, "สารคาม": {"rows": [["ปาย", [24503, 111426, 21.99, 31081, 27.89], [2140, 9574.2, 22.35, 3039.04, 31.74], [3979.18, 17170, 23.18]]], "total": [[24503, 111426, 21.99, 31081, 27.89], [2140, 9574.2, 22.35, 3039.04, 31.74], [3979.18, 17170, 23.18]]}, "อุบล": {"rows": [["วิว", [10700, 86422, 12.38, 25453, 29.45], [null, null, null, null, null], [1832.57, null, null]], ["เฟิน", [13375, 99577.02, 13.43, 35734, 35.89], [null, null, null, null, null], [2925.33, 10830, 27.01]]], "total": [[24075, 185999.02, 12.94, 61187, 32.9], [null, null, null, null, null], [4757.9, 10830, 43.93]]}, "ส่วนกลาง": {"rows": [["เมลานี", [6955, 66234, 10.5, 18689, 28.22], [10700, 56940.03, 18.79, 19742.05, 34.67], [1241.21, 1198, 103.61]], ["อ๋อมแอ๋ม", [null, null, null, null, null], [4280, 7823.95, 54.7, 3433.8, 43.89], [588.89, 8980, 6.56]]], "total": [[6955, 66234, 10.5, 18689, 28.22], [14980, 64763.98, 23.13, 23175.85, 35.79], [1830.1, 10178, 17.98]]}}, REC={"benefits": ["ได้ป้ายร้านแนะนำ เพิ่มความน่าเชื่อถือจากลูกค้า", "ค้นหาเจอง่ายขึ้น", "มีสิทธิเข้าร่วมแคมเปญ", "ฟรี Chat Broadcast"], "updated": "อัปเดตล่าสุด 31 ส.ค. 69", "criteria": [["ยอดขายต่อเดือน", ">= 100 คำสั่งซื้อ หรือ >= 30,000 บาท"], ["จำนวนผู้ซื้อที่ไม่ซ้ำกันต่อเดือน", ">= 15 คน"], ["คะแนนร้านค้า", ">= 4.5 คะแนน"], ["อัตราคำสั่งซื้อที่ไม่สำเร็จ", "<= 10%"], ["อัตราการจัดส่งสินค้าล่าช้า", "<= 10%"], ["อัตราการตอบกลับแชท", ">= 70%"], ["เปอร์เซ็นต์สินค้าพร้อมออเดอร์ (ไม่เกินจำนวนวันที่ละเมิดเกณฑ์ภายใน 30 วันที่ผ่านมา)", "<= 10%"], ["จำนวนวันที่ละเมิดเกณฑ์สินค้าพร้อมออเดอร์", "<= 5 วัน"], ["คะแนนความประพฤติ", "= 0 คะแนน"], ["อัตราการจัดส่งเร็ว", ">= 85%"]], "express_title": "[มีผล 15 ก.ย. 69 เป็นต้นไป] เกณฑ์ส่งด่วน (Express Delivery)", "express": [["จำนวนวันที่ร้านค้าเปิดใช้งานส่งด่วน*", "7 วัน/สัปดาห์*"], ["จำนวนวันที่เปิดใช้งานส่งด่วนกับสินค้าอย่างน้อย 90%**", "7 วัน/สัปดาห์*"]], "express_notes": ["*คำสั่งซื้อที่ชำระเงินสำเร็จภายใน 12.00 น. ร้านค้าต้องจัดส่งมอบพัสดุให้ขนส่งภายในวันเดียวกัน โดยไม่นับอาทิตย์และวันหยุดนักขัตฤกษ์ ตามนโยบาย DTS0", "**คำนวณจากสินค้าที่สามารถเปิดใช้งานส่งด่วนได้"]}, OCT=[{"branch": "ร้อยเอ็ด", "target": 1555000, "actual": 346430}, {"branch": "มหาสารคาม", "target": 250000, "actual": 44327}, {"branch": "อุบล", "target": 300000, "actual": 118495}, {"branch": "ขอนแก่น", "target": 250000, "actual": 63765}, {"branch": "กาฬสินธุ์", "target": 1000000, "actual": 258309}];
 const PNAME={sh:'Shopee',lz:'Lazada',fb:'Facebook'};
 const fmt = n => n==null ? '–' : Math.round(n).toLocaleString('en-US');
 function tgtColor(pc){ return pc>=85?'var(--green)':pc>=60?'var(--amber)':'var(--red)'; }
@@ -243,12 +243,10 @@ function sAgenda(){
   const items=[
     ['01','ยอดขายเทียบเป้า','ภาพรวม 5 สาขา + เทียบเดือน ส.ค.'],
     ['02','เจาะรายสาขา','เป้า/ทำได้รายคน + เทียบเดือนก่อน'],
-    ['03','% ค่าโฆษณา Shopee','เกณฑ์ไม่เกิน 20% ของยอดขาย'],
-    ['04','% ค่าโฆษณา Lazada','เกณฑ์ไม่เกิน 20% ของยอดขาย'],
-    ['05','% ค่าโฆษณา Facebook','เกณฑ์ไม่เกิน 35% ของยอดขาย'],
-    ['06','ค่าธรรมเนียมแพลตฟอร์ม','Shopee และ Lazada'],
-    ['07','ร้านค้าแนะนำ','สิทธิประโยชน์และเกณฑ์การเป็นร้านค้าแนะนำ'],
-    ['08','เป้าหมายเดือน ต.ค.','ความคืบหน้ายอดขาย ณ วันที่ 8'],
+    ['03','% ค่าโฆษณา ต่อยอดขาย','ตารางสรุป Ads/ค่าธรรมเนียม ทั้ง 3 แพลตฟอร์ม รายสาขา'],
+    ['04','ค่าธรรมเนียมแพลตฟอร์ม','Shopee และ Lazada'],
+    ['05','ร้านค้าแนะนำ','สิทธิประโยชน์และเกณฑ์การเป็นร้านค้าแนะนำ'],
+    ['06','เป้าหมายเดือน ต.ค.','ความคืบหน้ายอดขาย ณ วันที่ 8'],
   ];
   return `<div class="slide-inner">
     <div class="eyebrow">Agenda</div>
@@ -336,27 +334,67 @@ function sBranch(bname){
   </div>`;
 }
 
-function sAds(plat){
-  const d=ADS[plat]; const limit=d.limit;
-  const rows=d.rows.slice().sort((a,b)=>(b.pc||0)-(a.pc||0));
-  return `<div class="slide-inner">
-    <div class="eyebrow">${plat==='sh'?'03':plat==='lz'?'04':'05'} · Ads Control · ${PNAME[plat]}</div>
-    <h2>% ค่าโฆษณา ${PNAME[plat]} ต่อยอดขาย</h2>
-    <p class="sub">โฟกัสเซลล์ที่มีแนวโน้มใช้ค่าโฆษณาสูง · เกณฑ์ <b>ไม่เกิน ${limit}%</b> — <span style="color:var(--red);font-weight:600">สีแดง = เกินเกณฑ์</span> · <span style="color:var(--green);font-weight:600">สีเขียว = ผ่าน</span></p>
-    <div class="tbl-wrap" style="margin-top:18px;max-width:760px;margin-left:auto;margin-right:auto">
-    <table><thead><tr><th>เซลล์</th><th>สาขา</th><th>ยอดขาย</th><th>ค่าโฆษณา</th><th>% ต่อยอด</th></tr></thead>
-    <tbody>
-    ${rows.map(r=>{const over=r.pc!=null&&r.pc>limit;
-      return `<tr><td><b>${r.name}</b></td><td>${r.branch}</td>
-        <td class="num">${fmt(r.sales)}</td><td class="num">${fmt(r.ads)}</td>
-        <td><span class="flag ${over?'':'ok'}">${r.pc==null?'–':r.pc.toFixed(1)+'%'}</span></td></tr>`;}).join('')}
-    </tbody></table></div>
+function sSummary(){
+  // Ads% limits: Shopee 20, Lazada 20, Facebook 35
+  const adsLimit={sh:20,lz:20,fb:35};
+  const n0=v=>v==null?'<span style="color:var(--mut)">–</span>':fmt(v);
+  // ads% cell with red/green by platform limit
+  const adsPct=(v,plat)=>{
+    if(v==null) return '<td style="text-align:center;color:var(--mut)">–</td>';
+    const over=v>adsLimit[plat];
+    return `<td style="text-align:center"><span class="flag ${over?'':'ok'}" style="font-size:.68rem;padding:1px 6px">${v.toFixed(2)}%</span></td>`;
+  };
+  // fee% cell neutral (muted)
+  const feePct=v=> v==null?'<td style="text-align:center;color:var(--mut)">–</td>':`<td style="text-align:center;color:var(--mut)">${v.toFixed(2)}%</td>`;
+  const numCell=v=>`<td class="num" style="text-align:right">${n0(v)}</td>`;
+
+  const rowHtml=(name,sh,lz,fb,isTotal)=>{
+    const cls=isTotal?'style="background:#fdfcf4;font-weight:700"':'';
+    return `<tr ${cls}>
+      <td style="position:sticky;left:0;background:${isTotal?'#fdfcf4':'#fff'};${isTotal?'font-weight:700':'font-weight:600'};z-index:1">${name}</td>
+      ${numCell(sh[0])}${numCell(sh[1])}${adsPct(sh[2],'sh')}${numCell(sh[3])}${feePct(sh[4])}
+      ${numCell(lz[0])}${numCell(lz[1])}${adsPct(lz[2],'lz')}${numCell(lz[3])}${feePct(lz[4])}
+      ${numCell(fb[0])}${numCell(fb[1])}${adsPct(fb[2],'fb')}
+    </tr>`;
+  };
+
+  let body='';
+  Object.entries(SUMMARY).forEach(([br,d])=>{
+    // branch header row
+    body+=`<tr><td colspan="14" style="position:sticky;left:0;background:#f4f2ec;font-weight:700;color:var(--ink);padding:8px 12px">${br==='ส่วนกลาง'?'ส่วนกลาง':'สาขา'+br}</td></tr>`;
+    d.rows.forEach(r=> body+=rowHtml(r[0],r[1],r[2],r[3],false));
+    body+=rowHtml('รวม',d.total[0],d.total[1],d.total[2],true);
+  });
+
+  return `<div class="slide-inner" style="max-width:100%;padding-left:clamp(14px,3vw,40px);padding-right:clamp(14px,3vw,40px)">
+    <div class="eyebrow">03 · Ads & Fee Summary</div>
+    <h2>% ค่าโฆษณา ต่อยอดขาย — ตารางสรุปรายสาขา</h2>
+    <p class="sub">สรุป Ads · ยอดขาย · % ค่าโฆษณาต่อยอด · ค่าธรรมเนียม ทั้ง 3 แพลตฟอร์ม
+    &nbsp;·&nbsp; เกณฑ์ % Ads: Shopee/Lazada ≤20% · Facebook ≤35% &nbsp;(<span style="color:var(--red);font-weight:600">แดง=เกิน</span> / <span style="color:var(--green);font-weight:600">เขียว=ผ่าน</span>)</p>
+    <div class="tbl-wrap" style="margin-top:14px;max-height:66vh;overflow:auto">
+    <table style="font-size:.72rem;min-width:1050px">
+      <thead>
+        <tr>
+          <th rowspan="2" style="position:sticky;left:0;top:0;background:#fbfaf6;z-index:3"></th>
+          <th colspan="5" style="text-align:center;background:var(--shopee);color:#fff;position:sticky;top:0;z-index:2">SHOPEE</th>
+          <th colspan="5" style="text-align:center;background:var(--lazada);color:#fff;position:sticky;top:0;z-index:2">LAZADA</th>
+          <th colspan="3" style="text-align:center;background:var(--fb);color:#fff;position:sticky;top:0;z-index:2">FACEBOOK</th>
+        </tr>
+        <tr>
+          <th style="text-align:right">Ads</th><th style="text-align:right">ยอดขาย</th><th style="text-align:center">%</th><th style="text-align:right">ค่าธรรมเนียม</th><th style="text-align:center">%</th>
+          <th style="text-align:right">Ads</th><th style="text-align:right">ยอดขาย</th><th style="text-align:center">%</th><th style="text-align:right">ค่าธรรมเนียม</th><th style="text-align:center">%</th>
+          <th style="text-align:right">Ads</th><th style="text-align:right">ยอดขาย</th><th style="text-align:center">%</th>
+        </tr>
+      </thead>
+      <tbody>${body}</tbody>
+    </table></div>
+    <p class="sub" style="margin-top:10px;font-size:.78rem">เลื่อนตารางเพื่อดูครบทุกสาขา · คอลัมน์ % ที่ติดสีคือ % ค่าโฆษณาต่อยอดขาย · ค่าธรรมเนียม % เป็นข้อมูลประกอบ</p>
   </div>`;
 }
 
 function sFeeTitle(){
   return `<div class="slide-inner cover">
-    <div class="eyebrow">06 · Platform Fee</div>
+    <div class="eyebrow">04 · Platform Fee</div>
     <h1>ค่าธรรมเนียม<br>Shopee และ Lazada</h1>
     <p class="sub">โครงสร้างค่าธรรมเนียมของแต่ละแพลตฟอร์ม และแนวทางควบคุมต้นทุน<br>
     <span style="color:var(--mut)">(อธิบายรายละเอียดในที่ประชุม)</span></p>
@@ -374,7 +412,7 @@ function sFeeTitle(){
 function sRec(){
   const r=REC;
   return `<div class="slide-inner">
-    <div class="eyebrow">07 · Recommended Shop</div>
+    <div class="eyebrow">05 · Recommended Shop</div>
     <h2>ข้อเสนอแนะ — การเป็นร้านค้าแนะนำ</h2>
     <div class="grid cols-2" style="margin-top:16px;align-items:start;gap:22px">
       <div>
@@ -407,7 +445,7 @@ function sRec(){
 function sOct(){
   const rows=OCT.map(n=>({...n,pc:n.actual/n.target*100}));
   return `<div class="slide-inner">
-    <div class="eyebrow">08 · Next Month</div>
+    <div class="eyebrow">06 · Next Month</div>
     <h2>เป้าหมายเดือนตุลาคม — ความคืบหน้า ณ วันที่ 8</h2>
     <p class="sub">แต่ละสาขาทำยอดได้กี่ % ของเป้าเดือนตุลาคมแล้ว (ข้อมูลถึงวันที่ 8) — ยังเหลือเวลาอีกมากในเดือนนี้</p>
     <div style="margin-top:24px">
@@ -423,7 +461,7 @@ function sOct(){
 
 slides.push(sCover,sAgenda,sOverview);
 Object.keys(SALES).forEach(b=> slides.push(()=>sBranch(b)));
-slides.push(()=>sAds('sh'),()=>sAds('lz'),()=>sAds('fb'));
+slides.push(sSummary);
 slides.push(sFeeTitle,sRec,sOct);
 
 const deck=document.getElementById('deck');
